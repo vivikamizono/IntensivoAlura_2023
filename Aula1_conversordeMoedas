@@ -1,0 +1,9 @@
+var nomedeUsuario = "Vitória";
+var valoremDolar = 30;
+var cotacaoemDolar = 5.32;
+
+var valoremReal = valoremDolar * cotacaoemDolar;
+valoremReal = valoremReal.toFixed(2);
+
+alert("Olá " + nomedeUsuario);
+alert("O valor de dolar em real será: R$ " + valoremReal);
