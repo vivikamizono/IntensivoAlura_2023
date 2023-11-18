@@ -1,0 +1,14 @@
+var listaFilmes = [
+  "https://media.fstatic.com/SHL6n4jxg56LXDigr64udKKmD6w=/210x303/smart/filters:format(webp)/media/movies/covers/2013/07/teen-beach-movie_t74405.jpg",
+  "https://play-lh.googleusercontent.com/E05H_CCcoTRnq69ZoCXph2U8ZN6TJ8Us4SBpyFY9T11XD5H3Q4dd2rr3JZyl0LdcKHIXJvog89YhR55dw2IA",
+  "https://br.web.img3.acsta.net/pictures/21/11/18/16/57/5746772.jpg",
+  "https://pm1.aminoapps.com/7351/abdbe895c3c17b00c4cf0f98a5a103e27e220bb3r1-465-660v2_hq.jpg",
+  "https://br.web.img2.acsta.net/medias/nmedia/18/96/99/61/20501189.jpg"
+];
+
+for (var i = 0; i < listaFilmes.length; i++) {
+  document.write("<img src=" + listaFilmes[i] + ">");
+}
+
+
+//links de filmes que eu gosto, mas pode trocar os links que o filme muda.
