@@ -1,0 +1,67 @@
+var vicky = {
+  nome: "vicky",
+  vitoria: 0,
+  empate: 0,
+  derrota: 0,
+  pontos: 0
+};
+
+var jogador2 = {
+  nome: "jogador2",
+  vitoria: 0,
+  empate: 0,
+  derrota: 0,
+  pontos: 0
+};
+
+var jogador3 = {
+  nome: "jogador3",
+  vitoria: 10,
+  empate: 0,
+  derrota: 0,
+  pontos: 0
+};
+
+var jogador4 = {
+  nome: "jogador4",
+  vitoria: 10,
+  empate: 0,
+  derrota: 0,
+  pontos: 0
+};
+
+var elementoTabela = document.getElementById("tabelaJogadores");
+
+exibirNaTela();
+
+function exibirNaTela() {
+  elementoTabela.innerHTML = `
+      <tr>
+          <td>${vicky.nome}</td>
+          <td>${vicky.vitoria}</td>
+          <td>${vicky.empate}</td>
+          <td>${vicky.derrota}</td>
+          <td>${vicky.pontos}</td>
+          <td><button onClick="adicionarVitoria(vicky)">Vitória</button></td>
+          <td><button onClick="adicionarEmpate(vicky)">Empate</button></td>
+          <td><button onClick="adicionarDerrota(vicky)">Derrota</button></td>
+      </tr>
+  `;
+}
+
+function adicionarVitoria(jogador) {
+  jogador.vitoria++;
+  jogador.pontos = jogador.pontos + 3;
+  exibirNaTela();
+}
+
+function adicionarEmpate(jogador) {
+  jogador.empate++;
+  jogador.pontos++;
+  exibirNaTela();
+}
+
+function adicionarDerrota(jogador) {
+  jogador.derrota++;
+  exibirNaTela();
+}
